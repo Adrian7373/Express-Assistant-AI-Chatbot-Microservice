@@ -78,5 +78,5 @@ app.post('/api/chat', async (req, res) => {
     }
 });
 
-const PORT = process.env.CHATBOT_PORT || 4001;
+const PORT = process.env.PORT || process.env.CHATBOT_PORT || 4001;
 app.listen(PORT, () => console.log(`4Ps AI Microservice running on port ${PORT}`));
