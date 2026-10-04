@@ -4,7 +4,25 @@ require('dotenv').config();
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 const app = express();
-app.use(cors());
+
+const allowedOrigins = [
+    'http://localhost:3000',
+    'http://localhost:5173',
+    'https://4ps-monitoring-system.vercel.app'
+];
+
+app.use(cors({
+    origin: function (origin, callback) {
+        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
+    methods: ['GET', 'POST'],
+    credentials: true
+}));
+
 app.use(express.json());
 
 app.get('/health', (_req, res) => {
