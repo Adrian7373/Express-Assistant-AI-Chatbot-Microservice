@@ -5,22 +5,20 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 const app = express();
 
-const allowedOrigins = [
+const defaultOrigins = [
     'http://localhost:3000',
     'http://localhost:5173',
     'https://4ps-monitoring-system.vercel.app'
 ];
+const configuredOrigins = process.env.CORS_ORIGINS
+    ?.split(',')
+    .map((origin) => origin.trim().replace(/\/$/, ''))
+    .filter(Boolean);
+const allowedOrigins = configuredOrigins?.length ? configuredOrigins : defaultOrigins;
 
 app.use(cors({
-    origin: function (origin, callback) {
-        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
+    origin: allowedOrigins,
     methods: ['GET', 'POST'],
-    credentials: true
 }));
 
 app.use(express.json());
