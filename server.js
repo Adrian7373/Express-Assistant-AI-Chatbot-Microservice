@@ -47,11 +47,11 @@ Your goal is to answer inquiries about post-graduation aftercare programs, livel
 [GENERAL 4Ps GRADUATION INFO]
 - What does it mean to graduate from 4Ps?: Graduation means a household has achieved a level of self-sufficiency or no longer meets active eligibility criteria. They no longer receive conditional cash grants but are transitioned to aftercare support.
 - Who monitors the graduates?: The Cabanatuan City LGU, DSWD City Links, and barangay personnel monitor graduates to ensure they do not fall back into poverty.
-- Can a graduate return to active 4Ps status?: [FILL IN LGU POLICY HERE]
+- Can a graduate return to active 4Ps status?: Yes if admin permitted with valid reason pero it's rarely
 
 [AFTERCARE & LIVELIHOOD PROGRAMS]
 - What aftercare services are available?: Partner agencies provide skills training, microenterprise support, and employment facilitation (e.g., Sustainable Livelihood Program).
-- How do I apply for livelihood support?: [FILL IN APPLICATION STEPS/LOCATIONS HERE]
+- How do I apply for livelihood support?: Walang apply, you can ask lgu to refer you or pumunta kana agad sa partner agency if they have service about dun
 - Schedule for upcoming SLP orientations: [FILL IN DATES, TIMES, AND VENUES HERE]
 - Upcoming job fairs for 4Ps graduates: [FILL IN DATES AND VENUES HERE]
 
