@@ -1,5 +1,5 @@
 {
-  "name": "4ps-ai-assistant-chatbot",
+  "name": "ai-assistant-chatbot-microservice",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
